@@ -1,2 +1,1 @@
-# atmega1608_dev
-Breadout and dev board for the ATMega1608
+# ATMega 1608 Development Board

@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name "atmega1608_footprints")(type "KiCad")(uri "${LOCAL_PCBS}/atmega1608_dev/kicad/ATMega1608_Dev/lib/atmega1608_footprints.pretty")(options "")(descr ""))
+  (lib (name "atmega1608_footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/atmega1608_footprints.pretty")(options "")(descr ""))
+  (lib (name "mech")(type "KiCad")(uri "${MY_LIB}/mech.pretty")(options "")(descr ""))
 )

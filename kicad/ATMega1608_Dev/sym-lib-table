@@ -2,5 +2,5 @@
   (version 7)
   (lib (name "atmega1608_dev")(type "KiCad")(uri "${KIPRJMOD}/lib/atmega1608_dev.kicad_sym")(options "")(descr ""))
   (lib (name "mech")(type "KiCad")(uri "${MY_LIB}/mech.kicad_sym")(options "")(descr ""))
-  (lib (name "attiny13_breakout")(type "KiCad")(uri "${MY_PCBS}/attiny13_breakout/kicad/attiny13_breakout/lib/attiny13_breakout.kicad_sym")(options "")(descr ""))
+  (lib (name "attiny13_breakout")(type "KiCad")(uri "${LOCAL_PCBS}/attiny13_breakout/kicad/attiny13_breakout/lib/attiny13_breakout.kicad_sym")(options "")(descr ""))
 )

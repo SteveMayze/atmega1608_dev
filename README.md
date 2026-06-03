@@ -96,6 +96,14 @@ git push origin r0.1.0
 
 The workflow runs automatically for tags matching `r*.*.*`.
 
+## CI KiCad version
+
+This project currently targets a KiCad 10 board file format, so CI installs KiCad nightly in
+GitHub Actions before generating artifacts.
+
+The workflow uses `release-artifacts.json` for project discovery and does not hardcode the
+`.kicad_pro` location.
+
 ## Future extension
 
 The script already includes optional flags for future needs:

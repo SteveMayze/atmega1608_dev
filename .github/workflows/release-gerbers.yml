@@ -24,10 +24,30 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install KiCad CLI
+      - name: Install KiCad CLI (nightly)
         run: |
+          set -euo pipefail
+          sudo add-apt-repository --yes ppa:kicad/kicad-dev-nightly
           sudo apt-get update
-          sudo apt-get install --yes kicad
+          sudo apt-get install --yes kicad-nightly
+
+      - name: Resolve kicad-cli path
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if command -v kicad-cli-nightly >/dev/null 2>&1; then
+            CLI_PATH="$(command -v kicad-cli-nightly)"
+          elif command -v kicad-cli >/dev/null 2>&1; then
+            CLI_PATH="$(command -v kicad-cli)"
+          else
+            echo "kicad-cli executable not found after installation." >&2
+            exit 1
+          fi
+
+          echo "KICAD_CLI=$CLI_PATH" >> "$GITHUB_ENV"
+          echo "Using KiCad CLI at: $CLI_PATH"
+          "$CLI_PATH" --version
 
       - name: Resolve release tag
         id: rel
@@ -54,7 +74,6 @@ jobs:
       - name: Generate Gerber and drill files
         run: |
           python3 scripts/generate_release_artifacts.py \
-            --project kicad/ATMega1608_Dev/ATMega1608_Dev.kicad_pro \
             --config release-artifacts.json \
             --tag "${{ steps.rel.outputs.tag }}"
 

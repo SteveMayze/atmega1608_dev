@@ -1,0 +1,16 @@
+{
+  "output_dir": "fritzing-part/",
+  "part_name": "ATMega1608_Dev 260528 01d",
+  "part_family": "KiCad2Fritzing Generated",
+  "part_type": "Custom PCB",
+  "soldermask_color": "#400080",
+  "silkscreen_color": "#ffffff",
+  "annular_color": "#666666",
+  "hole_color": "#fd8008",
+  "pad_scale": "0.75",
+  "use_3d_render": true,
+  "include_component_silkscreen": false,
+  "include_fab_layer": false,
+  "use_kicad_native_overlay": true,
+  "text_scale": "1.15"
+}

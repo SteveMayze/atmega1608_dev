@@ -1,0 +1,83 @@
+name: Generate Release Gerbers
+
+on:
+  push:
+    tags:
+      - "r*.*.*"
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag in r#.#.# format (optional for manual runs)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-gerbers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install KiCad CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes kicad
+
+      - name: Resolve release tag
+        id: rel
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -n "${{ inputs.release_tag }}" ]]; then
+            TAG="${{ inputs.release_tag }}"
+          elif [[ "${{ github.ref_type }}" == "tag" && -n "${{ github.ref_name }}" ]]; then
+            TAG="${{ github.ref_name }}"
+          else
+            echo "No release tag provided. For manual runs, set workflow input release_tag." >&2
+            exit 1
+          fi
+
+          if [[ ! "$TAG" =~ ^r[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Tag '$TAG' must match r#.#.#" >&2
+            exit 1
+          fi
+
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Generate Gerber and drill files
+        run: |
+          python3 scripts/generate_release_artifacts.py \
+            --config release-artifacts.json \
+            --tag "${{ steps.rel.outputs.tag }}"
+
+      - name: Package gerber deliverables
+        run: |
+          set -euo pipefail
+          ZIP_NAME="gerber-${{ steps.rel.outputs.tag }}.zip"
+          rm -f "$ZIP_NAME"
+          cd gerber
+          zip -r "../$ZIP_NAME" .
+          cd ..
+          echo "zip_name=$ZIP_NAME" >> "$GITHUB_OUTPUT"
+        id: package
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gerber-${{ steps.rel.outputs.tag }}
+          path: |
+            gerber/
+            ${{ steps.package.outputs.zip_name }}
+
+      - name: Attach ZIP to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.rel.outputs.tag }}
+          files: ${{ steps.package.outputs.zip_name }}

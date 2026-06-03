@@ -1,0 +1,2620 @@
+{
+  "source_board": "/Volumes/SanDisk/PCB-Archive/atmega1608_dev/kicad/ATMega1608_Dev/ATMega1608_Dev.kicad_pcb",
+  "nets": [
+    {
+      "name": "+3.3V"
+    },
+    {
+      "name": "+5V"
+    },
+    {
+      "name": "/DIN"
+    },
+    {
+      "name": "/DOUT"
+    },
+    {
+      "name": "/MISO"
+    },
+    {
+      "name": "/MOSI"
+    },
+    {
+      "name": "/PA2"
+    },
+    {
+      "name": "/PA3"
+    },
+    {
+      "name": "/PC2"
+    },
+    {
+      "name": "/PC3"
+    },
+    {
+      "name": "/PD0"
+    },
+    {
+      "name": "/PD1"
+    },
+    {
+      "name": "/PD2"
+    },
+    {
+      "name": "/PD3"
+    },
+    {
+      "name": "/PD4"
+    },
+    {
+      "name": "/PD5"
+    },
+    {
+      "name": "/PD6"
+    },
+    {
+      "name": "/PD7"
+    },
+    {
+      "name": "/PF0"
+    },
+    {
+      "name": "/PF1"
+    },
+    {
+      "name": "/PF4"
+    },
+    {
+      "name": "/PF5"
+    },
+    {
+      "name": "/RxD0"
+    },
+    {
+      "name": "/SCK"
+    },
+    {
+      "name": "/SCL"
+    },
+    {
+      "name": "/SDA"
+    },
+    {
+      "name": "/SS"
+    },
+    {
+      "name": "/TxD0"
+    },
+    {
+      "name": "/UPDI"
+    },
+    {
+      "name": "/USB-5V"
+    },
+    {
+      "name": "/~{RESET}"
+    },
+    {
+      "name": "GND"
+    },
+    {
+      "name": "Net-(D1-A)"
+    },
+    {
+      "name": "Net-(D3-A)"
+    },
+    {
+      "name": "Net-(D3-K)"
+    },
+    {
+      "name": "Net-(J2-Pin_5)"
+    },
+    {
+      "name": "Net-(U3-PC0{slash}TxD1{slash}2-WO{slash}1-IN0)"
+    },
+    {
+      "name": "Net-(U3-PC1{slash}RxD1-IN1)"
+    },
+    {
+      "name": "unconnected-(J2-Pin_1-Pad1)"
+    },
+    {
+      "name": "unconnected-(J2-Pin_6-Pad6)"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_3-Pad3)"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_3-Pad3)_1"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_4-Pad4)"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_4-Pad4)_1"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_5-Pad5)"
+    },
+    {
+      "name": "unconnected-(TC1-Pin_5-Pad5)_1"
+    }
+  ],
+  "footprints": [
+    {
+      "reference": "C6",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "at": [
+        142.36826,
+        56.832499,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/~{RESET}",
+          "pinfunction": "",
+          "at": [
+            -0.95,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "",
+          "at": [
+            0.95,
+            0.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "J5",
+      "value": "GPIO2",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "at": [
+        137.795001,
+        52.07,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/UPDI",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/~{RESET}",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            0.0,
+            2.54,
+            90.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "/PD4",
+          "pinfunction": "Pin_3_3",
+          "at": [
+            0.0,
+            5.08,
+            90.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "/PD5",
+          "pinfunction": "Pin_4_4",
+          "at": [
+            0.0,
+            7.62,
+            90.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "/PD6",
+          "pinfunction": "Pin_5_5",
+          "at": [
+            0.0,
+            10.16,
+            90.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "/PD7",
+          "pinfunction": "Pin_6_6",
+          "at": [
+            0.0,
+            12.7,
+            90.0
+          ]
+        },
+        {
+          "pad": "7",
+          "net": "/PF5",
+          "pinfunction": "Pin_7_7",
+          "at": [
+            0.0,
+            15.24,
+            90.0
+          ]
+        },
+        {
+          "pad": "8",
+          "net": "/PF4",
+          "pinfunction": "Pin_8_8",
+          "at": [
+            0.0,
+            17.78,
+            90.0
+          ]
+        },
+        {
+          "pad": "9",
+          "net": "/SCL",
+          "pinfunction": "Pin_9_9",
+          "at": [
+            0.0,
+            20.32,
+            90.0
+          ]
+        },
+        {
+          "pad": "10",
+          "net": "/SDA",
+          "pinfunction": "Pin_10_10",
+          "at": [
+            0.0,
+            22.86,
+            90.0
+          ]
+        },
+        {
+          "pad": "11",
+          "net": "/PF1",
+          "pinfunction": "Pin_11_11",
+          "at": [
+            0.0,
+            25.4,
+            90.0
+          ]
+        },
+        {
+          "pad": "12",
+          "net": "/PF0",
+          "pinfunction": "Pin_12_12",
+          "at": [
+            0.0,
+            27.94,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C5",
+      "value": "1\u03bcF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+      "at": [
+        127.7108,
+        64.8602,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+3.3V",
+          "pinfunction": "",
+          "at": [
+            -1.0375,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "",
+          "at": [
+            1.0375,
+            0.0,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "D1",
+      "value": "B130-13-F",
+      "footprint": "Diode_SMD:D_SMA",
+      "at": [
+        122.618999,
+        66.801999,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+5V",
+          "pinfunction": "K_1",
+          "at": [
+            -2.0,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "Net-(D1-A)",
+          "pinfunction": "A_2",
+          "at": [
+            2.0,
+            0.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "J2",
+      "value": "USART-USB",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "at": [
+        114.1222,
+        69.2658,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "unconnected-(J2-Pin_1-Pad1)",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            0.0,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/DIN",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            0.0,
+            2.54,
+            180.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "/DOUT",
+          "pinfunction": "Pin_3_3",
+          "at": [
+            0.0,
+            5.08,
+            180.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "GND",
+          "pinfunction": "Pin_4_4",
+          "at": [
+            0.0,
+            7.62,
+            180.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "Net-(J2-Pin_5)",
+          "pinfunction": "Pin_5_5",
+          "at": [
+            0.0,
+            10.16,
+            180.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "unconnected-(J2-Pin_6-Pad6)",
+          "pinfunction": "Pin_6_6",
+          "at": [
+            0.0,
+            12.7,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R12",
+      "value": "0\u03a9",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "at": [
+        141.9352,
+        68.5311,
+        -90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(U3-PC1{slash}RxD1-IN1)",
+          "pinfunction": "",
+          "at": [
+            -0.9125,
+            0.0,
+            270.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/DIN",
+          "pinfunction": "",
+          "at": [
+            0.9125,
+            0.0,
+            270.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "TC1",
+      "value": "ISP",
+      "footprint": "atmega1608_footprints:Tag-Connect EC06",
+      "at": [
+        167.64,
+        64.008,
+        -90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/UPDI",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            3.81,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "1",
+          "net": "/UPDI",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            3.81,
+            0.635,
+            0.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "+3.3V",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            2.54,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "+3.3V",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            2.54,
+            0.635,
+            0.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "unconnected-(TC1-Pin_3-Pad3)",
+          "pinfunction": "Pin_3_3",
+          "at": [
+            1.27,
+            0.01,
+            0.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "unconnected-(TC1-Pin_3-Pad3)_1",
+          "pinfunction": "Pin_3_3",
+          "at": [
+            1.27,
+            0.635,
+            0.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "unconnected-(TC1-Pin_4-Pad4)_1",
+          "pinfunction": "Pin_4_4",
+          "at": [
+            -1.27,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "unconnected-(TC1-Pin_4-Pad4)",
+          "pinfunction": "Pin_4_4",
+          "at": [
+            -1.27,
+            0.635,
+            0.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "unconnected-(TC1-Pin_5-Pad5)",
+          "pinfunction": "Pin_5_5",
+          "at": [
+            -2.54,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "unconnected-(TC1-Pin_5-Pad5)_1",
+          "pinfunction": "Pin_5_5",
+          "at": [
+            -2.54,
+            0.635,
+            0.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "GND",
+          "pinfunction": "Pin_6_6",
+          "at": [
+            -3.81,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "GND",
+          "pinfunction": "Pin_6_6",
+          "at": [
+            -3.81,
+            0.635,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "D3",
+      "value": "LED",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "at": [
+        130.429001,
+        52.601501,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(D3-K)",
+          "pinfunction": "K_1",
+          "at": [
+            -0.9375,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "Net-(D3-A)",
+          "pinfunction": "A_2",
+          "at": [
+            0.9375,
+            0.0,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "H2",
+      "value": "MountingHole",
+      "footprint": "MountingHole:MountingHole_2.7mm_M2.5",
+      "at": [
+        121.92,
+        53.7972,
+        0.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": []
+    },
+    {
+      "reference": "R10",
+      "value": "10k\u03a9",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "at": [
+        142.408863,
+        58.991501,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/~{RESET}",
+          "pinfunction": "",
+          "at": [
+            -0.9125,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "+3.3V",
+          "pinfunction": "",
+          "at": [
+            0.9125,
+            0.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "J3",
+      "value": "GPIO",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "at": [
+        127.55,
+        74.041,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/TxD0",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/RxD0",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            0.0,
+            2.54,
+            90.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "/PA2",
+          "pinfunction": "Pin_3_3",
+          "at": [
+            0.0,
+            5.08,
+            90.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "/PA3",
+          "pinfunction": "Pin_4_4",
+          "at": [
+            0.0,
+            7.62,
+            90.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "/MOSI",
+          "pinfunction": "Pin_5_5",
+          "at": [
+            0.0,
+            10.16,
+            90.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "/MISO",
+          "pinfunction": "Pin_6_6",
+          "at": [
+            0.0,
+            12.7,
+            90.0
+          ]
+        },
+        {
+          "pad": "7",
+          "net": "/SCK",
+          "pinfunction": "Pin_7_7",
+          "at": [
+            0.0,
+            15.24,
+            90.0
+          ]
+        },
+        {
+          "pad": "8",
+          "net": "/SS",
+          "pinfunction": "Pin_8_8",
+          "at": [
+            0.0,
+            17.78,
+            90.0
+          ]
+        },
+        {
+          "pad": "9",
+          "net": "/DIN",
+          "pinfunction": "Pin_9_9",
+          "at": [
+            0.0,
+            20.32,
+            90.0
+          ]
+        },
+        {
+          "pad": "10",
+          "net": "/DOUT",
+          "pinfunction": "Pin_10_10",
+          "at": [
+            0.0,
+            22.86,
+            90.0
+          ]
+        },
+        {
+          "pad": "11",
+          "net": "/PC2",
+          "pinfunction": "Pin_11_11",
+          "at": [
+            0.0,
+            25.4,
+            90.0
+          ]
+        },
+        {
+          "pad": "12",
+          "net": "/PC3",
+          "pinfunction": "Pin_12_12",
+          "at": [
+            0.0,
+            27.94,
+            90.0
+          ]
+        },
+        {
+          "pad": "13",
+          "net": "/PD0",
+          "pinfunction": "Pin_13_13",
+          "at": [
+            0.0,
+            30.48,
+            90.0
+          ]
+        },
+        {
+          "pad": "14",
+          "net": "/PD1",
+          "pinfunction": "Pin_14_14",
+          "at": [
+            0.0,
+            33.02,
+            90.0
+          ]
+        },
+        {
+          "pad": "15",
+          "net": "/PD2",
+          "pinfunction": "Pin_15_15",
+          "at": [
+            0.0,
+            35.56,
+            90.0
+          ]
+        },
+        {
+          "pad": "16",
+          "net": "/PD3",
+          "pinfunction": "Pin_16_16",
+          "at": [
+            0.0,
+            38.1,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "JP102",
+      "value": "Indicator LED",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+      "at": [
+        127.000001,
+        52.680001,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(D3-A)",
+          "pinfunction": "A_1",
+          "at": [
+            -0.65,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "+3.3V",
+          "pinfunction": "B_2",
+          "at": [
+            0.65,
+            0.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "J4",
+      "value": "Power OUT",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "at": [
+        114.046,
+        74.041,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+3.3V",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            0.0,
+            2.54,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "LG1",
+      "value": "logo",
+      "footprint": "mech:MyBasic_rounded_50_1",
+      "at": [
+        122.0,
+        71.0,
+        0.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": []
+    },
+    {
+      "reference": "H1",
+      "value": "MountingHole",
+      "footprint": "MountingHole:MountingHole_2.7mm_M2.5",
+      "at": [
+        161.925,
+        68.834,
+        0.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": []
+    },
+    {
+      "reference": "U1",
+      "value": "TC1262-33",
+      "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+      "at": [
+        133.35,
+        63.5,
+        0.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+5V",
+          "pinfunction": "VI_1",
+          "at": [
+            -3.15,
+            -2.3,
+            0.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "GND_2",
+          "at": [
+            -3.15,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "GND_2",
+          "at": [
+            3.15,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "+3.3V",
+          "pinfunction": "VO_3",
+          "at": [
+            -3.15,
+            2.3,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "J1",
+      "value": "Alt Power",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "at": [
+        113.533,
+        52.07,
+        90.0
+      ],
+      "silkscreen_user_labels": [
+        "5V    IN",
+        "3V3 OUT",
+        "USB  5V"
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(D1-A)",
+          "pinfunction": "Pin_1_1",
+          "at": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "Pin_2_2",
+          "at": [
+            0.0,
+            2.54,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "JP101",
+      "value": "USB Pwr",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "at": [
+        122.25,
+        59.0,
+        -90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/USB-5V",
+          "pinfunction": "A_1",
+          "at": [
+            0.0,
+            0.0,
+            270.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "Net-(J2-Pin_5)",
+          "pinfunction": "B_2",
+          "at": [
+            0.0,
+            2.54,
+            270.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R2",
+      "value": "270\u03a9",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "at": [
+        132.715,
+        52.6015,
+        90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(D3-K)",
+          "pinfunction": "",
+          "at": [
+            -0.9125,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "",
+          "at": [
+            0.9125,
+            0.0,
+            90.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R11",
+      "value": "0\u03a9",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "at": [
+        144.399,
+        66.7785,
+        -90.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "Net-(U3-PC0{slash}TxD1{slash}2-WO{slash}1-IN0)",
+          "pinfunction": "",
+          "at": [
+            -0.9125,
+            0.0,
+            270.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/DOUT",
+          "pinfunction": "",
+          "at": [
+            0.9125,
+            0.0,
+            270.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C7",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "at": [
+        146.939,
+        58.674,
+        -135.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+3.3V",
+          "pinfunction": "",
+          "at": [
+            -0.949999,
+            0.0,
+            225.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "pinfunction": "",
+          "at": [
+            0.949999,
+            0.0,
+            225.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "U3",
+      "value": "ATMega1608_32",
+      "footprint": "Package_QFP:TQFP-32_7x7mm_P0.8mm",
+      "at": [
+        152.273,
+        62.992,
+        45.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "/PA3",
+          "pinfunction": "PA3/TWI/XDIR0/SCL/0-WO3/1-WO/0-OUT_1",
+          "at": [
+            -4.1625,
+            -2.8,
+            45.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/MOSI",
+          "pinfunction": "PA4/MOSI/0-WO4_2",
+          "at": [
+            -4.1625,
+            -2.000001,
+            45.0
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "/MISO",
+          "pinfunction": "PA5/MISO/0-WO5_3",
+          "at": [
+            -4.1625,
+            -1.2,
+            45.0
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "/SCK",
+          "pinfunction": "PA6/SCK_4",
+          "at": [
+            -4.1625,
+            -0.4,
+            45.0
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "/SS",
+          "pinfunction": "PA7/CLKOUT/ADC0-OUT/SS_5",
+          "at": [
+            -4.1625,
+            0.4,
+            45.0
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "Net-(U3-PC0{slash}TxD1{slash}2-WO{slash}1-IN0)",
+          "pinfunction": "PC0/TxD1/2-WO/1-IN0_6",
+          "at": [
+            -4.1625,
+            1.2,
+            45.0
+          ]
+        },
+        {
+          "pad": "7",
+          "net": "Net-(U3-PC1{slash}RxD1-IN1)",
+          "pinfunction": "PC1/RxD1-IN1_7",
+          "at": [
+            -4.1625,
+            2.000001,
+            45.0
+          ]
+        },
+        {
+          "pad": "8",
+          "net": "/PC2",
+          "pinfunction": "PC2/TWI/XCK1/EVOUTC/1-IN2_8",
+          "at": [
+            -4.1625,
+            2.8,
+            45.0
+          ]
+        },
+        {
+          "pad": "9",
+          "net": "/PC3",
+          "pinfunction": "PC3/TWI/XDIR1/1-OUT_9",
+          "at": [
+            -2.8,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "10",
+          "net": "/PD0",
+          "pinfunction": "PD0/AIN0/2-IN0_10",
+          "at": [
+            -2.000001,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "11",
+          "net": "/PD1",
+          "pinfunction": "PD1/AIN1/ADC0-P3/2-IN1_11",
+          "at": [
+            -1.2,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "12",
+          "net": "/PD2",
+          "pinfunction": "PD2/AIN2/ADC0-P0/EVOUTD/2-IN2_12",
+          "at": [
+            -0.4,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "13",
+          "net": "/PD3",
+          "pinfunction": "PD3/AIN3/ADC0-N0/2-OUT_13",
+          "at": [
+            0.4,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "14",
+          "net": "/PD4",
+          "pinfunction": "PD4/AIN4/ADC0-P1_14",
+          "at": [
+            1.2,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "15",
+          "net": "/PD5",
+          "pinfunction": "PD5/AIN5/ADC0-N1_15",
+          "at": [
+            2.000001,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "16",
+          "net": "/PD6",
+          "pinfunction": "PD6/AIN6/ADC0-P2_16",
+          "at": [
+            2.8,
+            4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "17",
+          "net": "/PD7",
+          "pinfunction": "PD7/VREFA/AIN7/ACD0-N2_17",
+          "at": [
+            4.1625,
+            2.8,
+            45.0
+          ]
+        },
+        {
+          "pad": "18",
+          "net": "+3.3V",
+          "pinfunction": "AVDD_18",
+          "at": [
+            4.1625,
+            2.000001,
+            45.0
+          ]
+        },
+        {
+          "pad": "19",
+          "net": "GND",
+          "pinfunction": "GND_19",
+          "at": [
+            4.1625,
+            1.2,
+            45.0
+          ]
+        },
+        {
+          "pad": "20",
+          "net": "/PF0",
+          "pinfunction": "PF0/TOSC1/TxD2/3-IN0_20",
+          "at": [
+            4.1625,
+            0.4,
+            45.0
+          ]
+        },
+        {
+          "pad": "21",
+          "net": "/PF1",
+          "pinfunction": "PF1/TOSC2/RxD2/3-IN1_21",
+          "at": [
+            4.1625,
+            -0.4,
+            45.0
+          ]
+        },
+        {
+          "pad": "22",
+          "net": "/SDA",
+          "pinfunction": "PF2/TWI/AIN12/XCK2/VOUTF/2-IN2_22",
+          "at": [
+            4.1625,
+            -1.2,
+            45.0
+          ]
+        },
+        {
+          "pad": "23",
+          "net": "/SCL",
+          "pinfunction": "PF3/TWI/AIN13/XDIR2/3-OUT_23",
+          "at": [
+            4.1625,
+            -2.000001,
+            45.0
+          ]
+        },
+        {
+          "pad": "24",
+          "net": "/PF4",
+          "pinfunction": "PF4_24",
+          "at": [
+            4.1625,
+            -2.8,
+            45.0
+          ]
+        },
+        {
+          "pad": "25",
+          "net": "/PF5",
+          "pinfunction": "PF5_25",
+          "at": [
+            2.8,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "26",
+          "net": "/~{RESET}",
+          "pinfunction": "PF6/~{RESET}_26",
+          "at": [
+            2.000001,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "27",
+          "net": "/UPDI",
+          "pinfunction": "UPDI_27",
+          "at": [
+            1.2,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "28",
+          "net": "+3.3V",
+          "pinfunction": "VDD_28",
+          "at": [
+            0.4,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "29",
+          "net": "GND",
+          "pinfunction": "GND_29",
+          "at": [
+            -0.4,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "30",
+          "net": "/TxD0",
+          "pinfunction": "PA0/EXTCLK/TxD0/0-WO0/0-IND0_30",
+          "at": [
+            -1.2,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "31",
+          "net": "/RxD0",
+          "pinfunction": "PA1/RxD0/0-WO1/0-IN1_31",
+          "at": [
+            -2.000001,
+            -4.1625,
+            45.0
+          ]
+        },
+        {
+          "pad": "32",
+          "net": "/PA2",
+          "pinfunction": "PA2/TWI/XCK0/SDA/0-WO/EVOUTA/0-IN2_32",
+          "at": [
+            -2.8,
+            -4.1625,
+            45.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "D2",
+      "value": "B130-13-F",
+      "footprint": "Diode_SMD:D_SMA",
+      "at": [
+        122.618999,
+        62.992,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "+5V",
+          "pinfunction": "K_1",
+          "at": [
+            -2.0,
+            0.0,
+            180.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/USB-5V",
+          "pinfunction": "A_2",
+          "at": [
+            2.0,
+            0.0,
+            180.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "LG2",
+      "value": "logo",
+      "footprint": "Symbol:KiCad-Logo_5mm_SilkScreen",
+      "at": [
+        141.25,
+        68.75,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": []
+    },
+    {
+      "reference": "LG3",
+      "value": "logo",
+      "footprint": "mech:MyBasic_rounded_50_1",
+      "at": [
+        141.25,
+        59.75,
+        180.0
+      ],
+      "silkscreen_user_labels": [],
+      "pads": []
+    }
+  ],
+  "board_outline": {
+    "polygons": [
+      [
+        {
+          "x": 111.76,
+          "y": 50.292
+        },
+        {
+          "x": 167.64,
+          "y": 50.292
+        },
+        {
+          "x": 167.64,
+          "y": 75.946
+        },
+        {
+          "x": 111.76,
+          "y": 75.946
+        }
+      ]
+    ],
+    "bounds_mm": {
+      "min_x": 111.76,
+      "min_y": 50.292,
+      "max_x": 167.64,
+      "max_y": 75.946
+    }
+  },
+  "silkscreen": {
+    "texts": [
+      {
+        "text": "Enable",
+        "x_mm": 119.75,
+        "y_mm": 56.75,
+        "rotation_deg": 0.0,
+        "size_mm": 0.5,
+        "thickness_mm": 0.0762,
+        "h_align": "left",
+        "v_align": "middle"
+      },
+      {
+        "text": "LED\nJumper",
+        "x_mm": 127.0,
+        "y_mm": 55.75,
+        "rotation_deg": 0.0,
+        "size_mm": 0.5,
+        "thickness_mm": 0.0762,
+        "h_align": "center",
+        "v_align": "bottom"
+      },
+      {
+        "text": "~{SUS}   TxD    RxD   GND   5V   NC\nUSB",
+        "x_mm": 116.84,
+        "y_mm": 63.25,
+        "rotation_deg": 90.0,
+        "size_mm": 0.5,
+        "thickness_mm": 0.0762,
+        "h_align": "center",
+        "v_align": "middle"
+      },
+      {
+        "text": "USART0                                             USART1\nTxD0  RxD0  PA2   PA3   MOS   MIS  SCK   SS   DIN  DOUT  PC2   PC3   PD0   PD1   PD2   PD3",
+        "x_mm": 126.746,
+        "y_mm": 71.374,
+        "rotation_deg": 0.0,
+        "size_mm": 0.508,
+        "thickness_mm": 0.0762,
+        "h_align": "left",
+        "v_align": "middle"
+      },
+      {
+        "text": "UPDI  RST   PD4   PD5   PD6   PD7  PF5   PF4   SCL   SDA   PF1   PF0",
+        "x_mm": 136.779,
+        "y_mm": 54.229,
+        "rotation_deg": 0.0,
+        "size_mm": 0.508,
+        "thickness_mm": 0.0762,
+        "h_align": "left",
+        "v_align": "middle"
+      },
+      {
+        "text": "ATMega1608 Dev\nRev 1.2",
+        "x_mm": 118.75,
+        "y_mm": 74.25,
+        "rotation_deg": 0.0,
+        "size_mm": 0.508,
+        "thickness_mm": 0.0762,
+        "h_align": "left",
+        "v_align": "middle"
+      }
+    ],
+    "lines": [],
+    "polygons": [
+      {
+        "points_mm": [
+          {
+            "x": 124.539068,
+            "y": 71.492399
+          },
+          {
+            "x": 124.519138,
+            "y": 72.015157
+          },
+          {
+            "x": 124.458339,
+            "y": 72.378069
+          },
+          {
+            "x": 124.357294,
+            "y": 72.579846
+          },
+          {
+            "x": 124.216624,
+            "y": 72.619203
+          },
+          {
+            "x": 124.048933,
+            "y": 72.507066
+          },
+          {
+            "x": 123.995682,
+            "y": 72.361488
+          },
+          {
+            "x": 123.961686,
+            "y": 72.054882
+          },
+          {
+            "x": 123.947676,
+            "y": 71.594537
+          },
+          {
+            "x": 123.947333,
+            "y": 71.49505
+          },
+          {
+            "x": 123.938764,
+            "y": 71.097735
+          },
+          {
+            "x": 123.91563,
+            "y": 70.745407
+          },
+          {
+            "x": 123.88179,
+            "y": 70.483877
+          },
+          {
+            "x": 123.853241,
+            "y": 70.378124
+          },
+          {
+            "x": 123.709675,
+            "y": 70.208654
+          },
+          {
+            "x": 123.475328,
+            "y": 70.061565
+          },
+          {
+            "x": 123.429908,
+            "y": 70.042284
+          },
+          {
+            "x": 123.208838,
+            "y": 69.931786
+          },
+          {
+            "x": 123.114007,
+            "y": 69.805972
+          },
+          {
+            "x": 123.100667,
+            "y": 69.700685
+          },
+          {
+            "x": 123.164639,
+            "y": 69.524243
+          },
+          {
+            "x": 123.332569,
+            "y": 69.440667
+          },
+          {
+            "x": 123.568475,
+            "y": 69.447481
+          },
+          {
+            "x": 123.836374,
+            "y": 69.542205
+          },
+          {
+            "x": 124.100284,
+            "y": 69.722361
+          },
+          {
+            "x": 124.154278,
+            "y": 69.773255
+          },
+          {
+            "x": 124.30556,
+            "y": 69.949985
+          },
+          {
+            "x": 124.412216,
+            "y": 70.149797
+          },
+          {
+            "x": 124.481517,
+            "y": 70.405186
+          },
+          {
+            "x": 124.520737,
+            "y": 70.748649
+          },
+          {
+            "x": 124.537149,
+            "y": 71.212682
+          },
+          {
+            "x": 124.539068,
+            "y": 71.492399
+          }
+        ]
+      },
+      {
+        "points_mm": [
+          {
+            "x": 122.34267,
+            "y": 71.401396
+          },
+          {
+            "x": 122.295189,
+            "y": 71.78495
+          },
+          {
+            "x": 122.130447,
+            "y": 72.134481
+          },
+          {
+            "x": 121.856161,
+            "y": 72.403811
+          },
+          {
+            "x": 121.714903,
+            "y": 72.477168
+          },
+          {
+            "x": 121.526567,
+            "y": 72.527105
+          },
+          {
+            "x": 121.255715,
+            "y": 72.558878
+          },
+          {
+            "x": 120.866911,
+            "y": 72.577742
+          },
+          {
+            "x": 120.645333,
+            "y": 72.583393
+          },
+          {
+            "x": 120.248939,
+            "y": 72.587691
+          },
+          {
+            "x": 119.910647,
+            "y": 72.583729
+          },
+          {
+            "x": 119.66887,
+            "y": 72.57245
+          },
+          {
+            "x": 119.565833,
+            "y": 72.556953
+          },
+          {
+            "x": 119.476971,
+            "y": 72.439885
+          },
+          {
+            "x": 119.468884,
+            "y": 72.26176
+          },
+          {
+            "x": 119.536694,
+            "y": 72.107596
+          },
+          {
+            "x": 119.593925,
+            "y": 72.067391
+          },
+          {
+            "x": 119.732727,
+            "y": 72.045378
+          },
+          {
+            "x": 119.996799,
+            "y": 72.028077
+          },
+          {
+            "x": 120.342093,
+            "y": 72.017813
+          },
+          {
+            "x": 120.567591,
+            "y": 72.016
+          },
+          {
+            "x": 121.049135,
+            "y": 72.000429
+          },
+          {
+            "x": 121.385671,
+            "y": 71.946481
+          },
+          {
+            "x": 121.599272,
+            "y": 71.843299
+          },
+          {
+            "x": 121.712013,
+            "y": 71.680028
+          },
+          {
+            "x": 121.745967,
+            "y": 71.445811
+          },
+          {
+            "x": 121.746,
+            "y": 71.436455
+          },
+          {
+            "x": 121.679502,
+            "y": 71.172492
+          },
+          {
+            "x": 121.474858,
+            "y": 70.985644
+          },
+          {
+            "x": 121.124342,
+            "y": 70.87032
+          },
+          {
+            "x": 120.922924,
+            "y": 70.840904
+          },
+          {
+            "x": 120.647361,
+            "y": 70.805063
+          },
+          {
+            "x": 120.500693,
+            "y": 70.759056
+          },
+          {
+            "x": 120.442873,
+            "y": 70.681255
+          },
+          {
+            "x": 120.433667,
+            "y": 70.576666
+          },
+          {
+            "x": 120.444631,
+            "y": 70.462268
+          },
+          {
+            "x": 120.502964,
+            "y": 70.395955
+          },
+          {
+            "x": 120.646824,
+            "y": 70.361166
+          },
+          {
+            "x": 120.914369,
+            "y": 70.341341
+          },
+          {
+            "x": 120.984,
+            "y": 70.337817
+          },
+          {
+            "x": 121.40028,
+            "y": 70.341844
+          },
+          {
+            "x": 121.69998,
+            "y": 70.406245
+          },
+          {
+            "x": 121.794279,
+            "y": 70.448786
+          },
+          {
+            "x": 122.090942,
+            "y": 70.693094
+          },
+          {
+            "x": 122.274163,
+            "y": 71.024037
+          },
+          {
+            "x": 122.34267,
+            "y": 71.401396
+          }
+        ]
+      },
+      {
+        "points_mm": [
+          {
+            "x": 123.195199,
+            "y": 71.12652
+          },
+          {
+            "x": 123.171174,
+            "y": 71.423519
+          },
+          {
+            "x": 123.119217,
+            "y": 71.633327
+          },
+          {
+            "x": 123.058333,
+            "y": 71.707951
+          },
+          {
+            "x": 122.866305,
+            "y": 71.738023
+          },
+          {
+            "x": 122.745857,
+            "y": 71.641621
+          },
+          {
+            "x": 122.687111,
+            "y": 71.404874
+          },
+          {
+            "x": 122.677333,
+            "y": 71.172909
+          },
+          {
+            "x": 122.642254,
+            "y": 70.677412
+          },
+          {
+            "x": 122.534985,
+            "y": 70.327937
+          },
+          {
+            "x": 122.352479,
+            "y": 70.115931
+          },
+          {
+            "x": 122.288135,
+            "y": 70.080336
+          },
+          {
+            "x": 122.110694,
+            "y": 70.037401
+          },
+          {
+            "x": 121.815586,
+            "y": 70.004319
+          },
+          {
+            "x": 121.454408,
+            "y": 69.986058
+          },
+          {
+            "x": 121.287767,
+            "y": 69.984
+          },
+          {
+            "x": 120.896142,
+            "y": 69.989548
+          },
+          {
+            "x": 120.631346,
+            "y": 70.01108
+          },
+          {
+            "x": 120.451098,
+            "y": 70.055927
+          },
+          {
+            "x": 120.313114,
+            "y": 70.131422
+          },
+          {
+            "x": 120.275751,
+            "y": 70.159478
+          },
+          {
+            "x": 120.096754,
+            "y": 70.388739
+          },
+          {
+            "x": 120.059202,
+            "y": 70.65195
+          },
+          {
+            "x": 120.166386,
+            "y": 70.89895
+          },
+          {
+            "x": 120.223312,
+            "y": 70.958854
+          },
+          {
+            "x": 120.446206,
+            "y": 71.073454
+          },
+          {
+            "x": 120.795642,
+            "y": 71.144508
+          },
+          {
+            "x": 120.879479,
+            "y": 71.152644
+          },
+          {
+            "x": 121.243848,
+            "y": 71.209077
+          },
+          {
+            "x": 121.444648,
+            "y": 71.306606
+          },
+          {
+            "x": 121.482808,
+            "y": 71.446155
+          },
+          {
+            "x": 121.359257,
+            "y": 71.628647
+          },
+          {
+            "x": 121.358952,
+            "y": 71.628952
+          },
+          {
+            "x": 121.161853,
+            "y": 71.726949
+          },
+          {
+            "x": 120.839223,
+            "y": 71.744715
+          },
+          {
+            "x": 120.379121,
+            "y": 71.68286
+          },
+          {
+            "x": 120.362751,
+            "y": 71.679719
+          },
+          {
+            "x": 119.983002,
+            "y": 71.53308
+          },
+          {
+            "x": 119.704556,
+            "y": 71.281501
+          },
+          {
+            "x": 119.531496,
+            "y": 70.958686
+          },
+          {
+            "x": 119.467901,
+            "y": 70.598335
+          },
+          {
+            "x": 119.517854,
+            "y": 70.234151
+          },
+          {
+            "x": 119.685435,
+            "y": 69.899837
+          },
+          {
+            "x": 119.974726,
+            "y": 69.629094
+          },
+          {
+            "x": 120.105528,
+            "y": 69.555569
+          },
+          {
+            "x": 120.28886,
+            "y": 69.476187
+          },
+          {
+            "x": 120.472289,
+            "y": 69.425824
+          },
+          {
+            "x": 120.697337,
+            "y": 69.399875
+          },
+          {
+            "x": 121.005528,
+            "y": 69.393734
+          },
+          {
+            "x": 121.438384,
+            "y": 69.402796
+          },
+          {
+            "x": 121.473491,
+            "y": 69.403852
+          },
+          {
+            "x": 121.966486,
+            "y": 69.426266
+          },
+          {
+            "x": 122.324435,
+            "y": 69.466823
+          },
+          {
+            "x": 122.581523,
+            "y": 69.537716
+          },
+          {
+            "x": 122.771932,
+            "y": 69.651137
+          },
+          {
+            "x": 122.929845,
+            "y": 69.819277
+          },
+          {
+            "x": 123.027625,
+            "y": 69.958171
+          },
+          {
+            "x": 123.107505,
+            "y": 70.158154
+          },
+          {
+            "x": 123.162582,
+            "y": 70.449259
+          },
+          {
+            "x": 123.192074,
+            "y": 70.786907
+          },
+          {
+            "x": 123.195199,
+            "y": 71.12652
+          }
+        ]
+      },
+      {
+        "points_mm": [
+          {
+            "x": 125.304378,
+            "y": 70.256418
+          },
+          {
+            "x": 125.302238,
+            "y": 70.850076
+          },
+          {
+            "x": 125.302,
+            "y": 71.034945
+          },
+          {
+            "x": 125.300032,
+            "y": 71.675217
+          },
+          {
+            "x": 125.293365,
+            "y": 72.165453
+          },
+          {
+            "x": 125.280856,
+            "y": 72.524914
+          },
+          {
+            "x": 125.261361,
+            "y": 72.772861
+          },
+          {
+            "x": 125.233735,
+            "y": 72.928554
+          },
+          {
+            "x": 125.196835,
+            "y": 73.011252
+          },
+          {
+            "x": 125.183831,
+            "y": 73.02467
+          },
+          {
+            "x": 125.016596,
+            "y": 73.096142
+          },
+          {
+            "x": 124.878667,
+            "y": 73.126474
+          },
+          {
+            "x": 124.878667,
+            "y": 72.672748
+          },
+          {
+            "x": 124.878667,
+            "y": 71.079371
+          },
+          {
+            "x": 124.874611,
+            "y": 70.558909
+          },
+          {
+            "x": 124.86325,
+            "y": 70.109332
+          },
+          {
+            "x": 124.845795,
+            "y": 69.755665
+          },
+          {
+            "x": 124.823453,
+            "y": 69.522937
+          },
+          {
+            "x": 124.799275,
+            "y": 69.436926
+          },
+          {
+            "x": 124.687827,
+            "y": 69.406092
+          },
+          {
+            "x": 124.445552,
+            "y": 69.359619
+          },
+          {
+            "x": 124.109493,
+            "y": 69.304095
+          },
+          {
+            "x": 123.762108,
+            "y": 69.252485
+          },
+          {
+            "x": 123.13364,
+            "y": 69.190536
+          },
+          {
+            "x": 122.406051,
+            "y": 69.162245
+          },
+          {
+            "x": 121.636137,
+            "y": 69.166497
+          },
+          {
+            "x": 120.880692,
+            "y": 69.202179
+          },
+          {
+            "x": 120.196514,
+            "y": 69.268176
+          },
+          {
+            "x": 119.798667,
+            "y": 69.330237
+          },
+          {
+            "x": 119.248333,
+            "y": 69.434859
+          },
+          {
+            "x": 119.225366,
+            "y": 71.056143
+          },
+          {
+            "x": 119.202399,
+            "y": 72.677426
+          },
+          {
+            "x": 119.775699,
+            "y": 72.768198
+          },
+          {
+            "x": 120.111613,
+            "y": 72.820928
+          },
+          {
+            "x": 120.416424,
+            "y": 72.868002
+          },
+          {
+            "x": 120.603,
+            "y": 72.896091
+          },
+          {
+            "x": 120.843169,
+            "y": 72.913739
+          },
+          {
+            "x": 121.214525,
+            "y": 72.920161
+          },
+          {
+            "x": 121.679383,
+            "y": 72.916617
+          },
+          {
+            "x": 122.200057,
+            "y": 72.904364
+          },
+          {
+            "x": 122.738862,
+            "y": 72.88466
+          },
+          {
+            "x": 123.258112,
+            "y": 72.858761
+          },
+          {
+            "x": 123.720122,
+            "y": 72.827926
+          },
+          {
+            "x": 124.087206,
+            "y": 72.793412
+          },
+          {
+            "x": 124.2225,
+            "y": 72.775306
+          },
+          {
+            "x": 124.878667,
+            "y": 72.672748
+          },
+          {
+            "x": 124.878667,
+            "y": 73.126474
+          },
+          {
+            "x": 124.707275,
+            "y": 73.164166
+          },
+          {
+            "x": 124.283113,
+            "y": 73.226037
+          },
+          {
+            "x": 123.771356,
+            "y": 73.279051
+          },
+          {
+            "x": 123.199249,
+            "y": 73.320504
+          },
+          {
+            "x": 122.594039,
+            "y": 73.347692
+          },
+          {
+            "x": 121.982969,
+            "y": 73.35791
+          },
+          {
+            "x": 121.830667,
+            "y": 73.357483
+          },
+          {
+            "x": 121.345669,
+            "y": 73.35226
+          },
+          {
+            "x": 120.906889,
+            "y": 73.344201
+          },
+          {
+            "x": 120.548154,
+            "y": 73.334183
+          },
+          {
+            "x": 120.303292,
+            "y": 73.32308
+          },
+          {
+            "x": 120.222,
+            "y": 73.315816
+          },
+          {
+            "x": 119.715428,
+            "y": 73.232236
+          },
+          {
+            "x": 119.307639,
+            "y": 73.149708
+          },
+          {
+            "x": 119.022462,
+            "y": 73.073632
+          },
+          {
+            "x": 118.8885,
+            "y": 73.013674
+          },
+          {
+            "x": 118.851465,
+            "y": 72.935849
+          },
+          {
+            "x": 118.823306,
+            "y": 72.76079
+          },
+          {
+            "x": 118.803198,
+            "y": 72.473075
+          },
+          {
+            "x": 118.790317,
+            "y": 72.057284
+          },
+          {
+            "x": 118.783837,
+            "y": 71.497996
+          },
+          {
+            "x": 118.782667,
+            "y": 71.034945
+          },
+          {
+            "x": 118.783618,
+            "y": 70.418599
+          },
+          {
+            "x": 118.787577,
+            "y": 69.950164
+          },
+          {
+            "x": 118.7962,
+            "y": 69.608224
+          },
+          {
+            "x": 118.811144,
+            "y": 69.371362
+          },
+          {
+            "x": 118.834066,
+            "y": 69.21816
+          },
+          {
+            "x": 118.866622,
+            "y": 69.127203
+          },
+          {
+            "x": 118.910468,
+            "y": 69.077073
+          },
+          {
+            "x": 118.935312,
+            "y": 69.061597
+          },
+          {
+            "x": 119.2012,
+            "y": 68.968179
+          },
+          {
+            "x": 119.606761,
+            "y": 68.888175
+          },
+          {
+            "x": 120.122773,
+            "y": 68.82283
+          },
+          {
+            "x": 120.720015,
+            "y": 68.773389
+          },
+          {
+            "x": 121.369264,
+            "y": 68.741099
+          },
+          {
+            "x": 122.041298,
+            "y": 68.727204
+          },
+          {
+            "x": 122.706896,
+            "y": 68.73295
+          },
+          {
+            "x": 123.336834,
+            "y": 68.759582
+          },
+          {
+            "x": 123.901891,
+            "y": 68.808346
+          },
+          {
+            "x": 124.140193,
+            "y": 68.839783
+          },
+          {
+            "x": 124.505658,
+            "y": 68.891423
+          },
+          {
+            "x": 124.785762,
+            "y": 68.936352
+          },
+          {
+            "x": 124.991766,
+            "y": 68.995847
+          },
+          {
+            "x": 125.134929,
+            "y": 69.091182
+          },
+          {
+            "x": 125.226512,
+            "y": 69.243632
+          },
+          {
+            "x": 125.277775,
+            "y": 69.474471
+          },
+          {
+            "x": 125.299977,
+            "y": 69.804975
+          },
+          {
+            "x": 125.304378,
+            "y": 70.256418
+          }
+        ]
+      }
+    ]
+  },
+  "fab_layer": {
+    "lines": [],
+    "polygons": []
+  }
+}

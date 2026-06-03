@@ -1,0 +1,636 @@
+{
+  "source_board": "/Volumes/SanDisk/PCB-Archive/atmega1608_dev/kicad/ATMega1608_Dev/ATMega1608_Dev.kicad_pcb",
+  "connector_count": 42,
+  "connectors": [
+    {
+      "id": "J5_pad1",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "Pin_1_1",
+      "net": "/UPDI",
+      "pinfunction": "Pin_1_1",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 137.795001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad2",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "Pin_2_2",
+      "net": "/~{RESET}",
+      "pinfunction": "Pin_2_2",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 140.335001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad3",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "3",
+      "name": "Pin_3_3",
+      "net": "/PD4",
+      "pinfunction": "Pin_3_3",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 142.875001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad4",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "4",
+      "name": "Pin_4_4",
+      "net": "/PD5",
+      "pinfunction": "Pin_4_4",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 145.415001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad5",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "5",
+      "name": "Pin_5_5",
+      "net": "/PD6",
+      "pinfunction": "Pin_5_5",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 147.955001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad6",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "6",
+      "name": "Pin_6_6",
+      "net": "/PD7",
+      "pinfunction": "Pin_6_6",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 150.495001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad7",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "7",
+      "name": "Pin_7_7",
+      "net": "/PF5",
+      "pinfunction": "Pin_7_7",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 153.035001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad8",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "8",
+      "name": "Pin_8_8",
+      "net": "/PF4",
+      "pinfunction": "Pin_8_8",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 155.575001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad9",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "9",
+      "name": "Pin_9_9",
+      "net": "/SCL",
+      "pinfunction": "Pin_9_9",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 158.115001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad10",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "10",
+      "name": "Pin_10_10",
+      "net": "/SDA",
+      "pinfunction": "Pin_10_10",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 160.655001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad11",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "11",
+      "name": "Pin_11_11",
+      "net": "/PF1",
+      "pinfunction": "Pin_11_11",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 163.195001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J5_pad12",
+      "footprint_reference": "J5",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",
+      "pad": "12",
+      "name": "Pin_12_12",
+      "net": "/PF0",
+      "pinfunction": "Pin_12_12",
+      "header_label": "J5",
+      "role": "signal",
+      "position_mm": {
+        "x": 165.735001,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J2_pad1",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "Pin_1_1",
+      "net": "unconnected-(J2-Pin_1-Pad1)",
+      "pinfunction": "Pin_1_1",
+      "header_label": "J2",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 69.2658
+      }
+    },
+    {
+      "id": "J2_pad2",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "Pin_2_2",
+      "net": "/DIN",
+      "pinfunction": "Pin_2_2",
+      "header_label": "J2",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 66.7258
+      }
+    },
+    {
+      "id": "J2_pad3",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "3",
+      "name": "Pin_3_3",
+      "net": "/DOUT",
+      "pinfunction": "Pin_3_3",
+      "header_label": "J2",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 64.1858
+      }
+    },
+    {
+      "id": "J2_pad4",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "4",
+      "name": "Pin_4_4",
+      "net": "GND",
+      "pinfunction": "Pin_4_4",
+      "header_label": "J2",
+      "role": "power",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 61.6458
+      }
+    },
+    {
+      "id": "J2_pad5",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "5",
+      "name": "Pin_5_5",
+      "net": "Net-(J2-Pin_5)",
+      "pinfunction": "Pin_5_5",
+      "header_label": "J2",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 59.1058
+      }
+    },
+    {
+      "id": "J2_pad6",
+      "footprint_reference": "J2",
+      "footprint_name": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+      "pad": "6",
+      "name": "Pin_6_6",
+      "net": "unconnected-(J2-Pin_6-Pad6)",
+      "pinfunction": "Pin_6_6",
+      "header_label": "J2",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.1222,
+        "y": 56.5658
+      }
+    },
+    {
+      "id": "J3_pad1",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "Pin_1_1",
+      "net": "/TxD0",
+      "pinfunction": "Pin_1_1",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 127.55,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad2",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "Pin_2_2",
+      "net": "/RxD0",
+      "pinfunction": "Pin_2_2",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 130.09,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad3",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "3",
+      "name": "Pin_3_3",
+      "net": "/PA2",
+      "pinfunction": "Pin_3_3",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 132.63,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad4",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "4",
+      "name": "Pin_4_4",
+      "net": "/PA3",
+      "pinfunction": "Pin_4_4",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 135.17,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad5",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "5",
+      "name": "Pin_5_5",
+      "net": "/MOSI",
+      "pinfunction": "Pin_5_5",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 137.71,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad6",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "6",
+      "name": "Pin_6_6",
+      "net": "/MISO",
+      "pinfunction": "Pin_6_6",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 140.25,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad7",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "7",
+      "name": "Pin_7_7",
+      "net": "/SCK",
+      "pinfunction": "Pin_7_7",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 142.79,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad8",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "8",
+      "name": "Pin_8_8",
+      "net": "/SS",
+      "pinfunction": "Pin_8_8",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 145.33,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad9",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "9",
+      "name": "Pin_9_9",
+      "net": "/DIN",
+      "pinfunction": "Pin_9_9",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 147.87,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad10",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "10",
+      "name": "Pin_10_10",
+      "net": "/DOUT",
+      "pinfunction": "Pin_10_10",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 150.41,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad11",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "11",
+      "name": "Pin_11_11",
+      "net": "/PC2",
+      "pinfunction": "Pin_11_11",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 152.95,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad12",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "12",
+      "name": "Pin_12_12",
+      "net": "/PC3",
+      "pinfunction": "Pin_12_12",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 155.49,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad13",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "13",
+      "name": "Pin_13_13",
+      "net": "/PD0",
+      "pinfunction": "Pin_13_13",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 158.03,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad14",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "14",
+      "name": "Pin_14_14",
+      "net": "/PD1",
+      "pinfunction": "Pin_14_14",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 160.57,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad15",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "15",
+      "name": "Pin_15_15",
+      "net": "/PD2",
+      "pinfunction": "Pin_15_15",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 163.11,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J3_pad16",
+      "footprint_reference": "J3",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical",
+      "pad": "16",
+      "name": "Pin_16_16",
+      "net": "/PD3",
+      "pinfunction": "Pin_16_16",
+      "header_label": "J3",
+      "role": "signal",
+      "position_mm": {
+        "x": 165.65,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "JP102_pad1",
+      "footprint_reference": "JP102",
+      "footprint_name": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+      "pad": "1",
+      "name": "JP102_1",
+      "net": "Net-(D3-A)",
+      "pinfunction": "A_1",
+      "header_label": "JP102",
+      "role": "signal",
+      "position_mm": {
+        "x": 127.650001,
+        "y": 52.680001
+      }
+    },
+    {
+      "id": "JP102_pad2",
+      "footprint_reference": "JP102",
+      "footprint_name": "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+      "pad": "2",
+      "name": "+3.3V",
+      "net": "+3.3V",
+      "pinfunction": "B_2",
+      "header_label": "JP102",
+      "role": "signal",
+      "position_mm": {
+        "x": 126.350001,
+        "y": 52.680001
+      }
+    },
+    {
+      "id": "J4_pad1",
+      "footprint_reference": "J4",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "Pin_1_1",
+      "net": "+3.3V",
+      "pinfunction": "Pin_1_1",
+      "header_label": "J4",
+      "role": "signal",
+      "position_mm": {
+        "x": 114.046,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J4_pad2",
+      "footprint_reference": "J4",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "Pin_2_2",
+      "net": "GND",
+      "pinfunction": "Pin_2_2",
+      "header_label": "J4",
+      "role": "power",
+      "position_mm": {
+        "x": 116.586,
+        "y": 74.041
+      }
+    },
+    {
+      "id": "J1_pad1",
+      "footprint_reference": "J1",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "Pin_1_1",
+      "net": "Net-(D1-A)",
+      "pinfunction": "Pin_1_1",
+      "header_label": "J1",
+      "role": "signal",
+      "position_mm": {
+        "x": 113.533,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "J1_pad2",
+      "footprint_reference": "J1",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "Pin_2_2",
+      "net": "GND",
+      "pinfunction": "Pin_2_2",
+      "header_label": "J1",
+      "role": "power",
+      "position_mm": {
+        "x": 116.073,
+        "y": 52.07
+      }
+    },
+    {
+      "id": "JP101_pad1",
+      "footprint_reference": "JP101",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "1",
+      "name": "/USB-5V",
+      "net": "/USB-5V",
+      "pinfunction": "A_1",
+      "header_label": "JP101",
+      "role": "signal",
+      "position_mm": {
+        "x": 122.25,
+        "y": 59.0
+      }
+    },
+    {
+      "id": "JP101_pad2",
+      "footprint_reference": "JP101",
+      "footprint_name": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pad": "2",
+      "name": "JP101_2",
+      "net": "Net-(J2-Pin_5)",
+      "pinfunction": "B_2",
+      "header_label": "JP101",
+      "role": "signal",
+      "position_mm": {
+        "x": 119.71,
+        "y": 59.0
+      }
+    }
+  ]
+}

@@ -77,10 +77,26 @@ jobs:
             --config release-artifacts.json \
             --tag "${{ steps.rel.outputs.tag }}"
 
+      - name: Resolve project name
+        id: proj
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          PROJECT_PATH="$(python3 -c 'import json; print(json.load(open("release-artifacts.json", "r", encoding="utf-8"))["project"]["path"])')"
+          PROJECT_NAME="$(basename "$PROJECT_PATH" .kicad_pro)"
+
+          if [[ -z "$PROJECT_NAME" ]]; then
+            echo "Could not resolve project name from release-artifacts.json" >&2
+            exit 1
+          fi
+
+          echo "project_name=$PROJECT_NAME" >> "$GITHUB_OUTPUT"
+
       - name: Package gerber deliverables
         run: |
           set -euo pipefail
-          ZIP_NAME="gerber-${{ steps.rel.outputs.tag }}.zip"
+          ZIP_NAME="${{ steps.proj.outputs.project_name }}-gerber-${{ steps.rel.outputs.tag }}.zip"
           rm -f "$ZIP_NAME"
           cd gerber
           zip -r "../$ZIP_NAME" .
@@ -91,7 +107,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gerber-${{ steps.rel.outputs.tag }}
+          name: ${{ steps.proj.outputs.project_name }}-gerber-${{ steps.rel.outputs.tag }}
           path: |
             gerber/
             ${{ steps.package.outputs.zip_name }}

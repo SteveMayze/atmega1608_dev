@@ -54,6 +54,7 @@ jobs:
       - name: Generate Gerber and drill files
         run: |
           python3 scripts/generate_release_artifacts.py \
+            --project kicad/ATMega1608_Dev/ATMega1608_Dev.kicad_pro \
             --config release-artifacts.json \
             --tag "${{ steps.rel.outputs.tag }}"
 

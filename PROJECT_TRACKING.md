@@ -23,8 +23,8 @@ Create a reusable release automation pattern for this KiCad project that can lat
 
 ## Template readiness tasks
 
-- [ ] Move automation files into a dedicated KiCad template skeleton.
-- [ ] Parameterize project file name discovery for multi-project repositories.
+- [x] Move automation files into repository root locations required by GitHub Actions.
+- [x] Parameterize project file name discovery for repositories where the KiCad project is not at root.
 - [ ] Add a template onboarding checklist (toolchain, paths, variables).
 - [ ] Document compatibility matrix for KiCad versions used in CI.
 

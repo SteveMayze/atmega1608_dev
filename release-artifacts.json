@@ -1,4 +1,7 @@
 {
+  "project": {
+    "path": "kicad/ATMega1608_Dev/ATMega1608_Dev.kicad_pro"
+  },
   "gerber": {
     "include_layers": [
       "F.Cu",

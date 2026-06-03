@@ -31,7 +31,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--project",
         type=Path,
-        help="Path to .kicad_pro file. If omitted, first .kicad_pro in repo root is used.",
+        help=(
+            "Path to .kicad_pro file. If omitted, this script auto-discovers a single "
+            ".kicad_pro under the repository root."
+        ),
     )
     parser.add_argument(
         "--config",
@@ -90,26 +93,62 @@ def find_repo_root(script_file: Path) -> Path:
     return script_file.resolve().parent.parent
 
 
-def find_project_file(repo_root: Path, explicit_project: Optional[Path]) -> Path:
+def resolve_configured_project_path(repo_root: Path, config: dict) -> Optional[Path]:
+    project_config = config.get("project")
+    if project_config is None:
+        return None
+    if not isinstance(project_config, dict):
+        fail("Config field 'project' must be a JSON object.")
+
+    configured_path = project_config.get("path")
+    if configured_path is None:
+        return None
+    if not isinstance(configured_path, str) or not configured_path.strip():
+        fail("Config field project.path must be a non-empty string.")
+
+    candidate = Path(configured_path)
+    if not candidate.is_absolute():
+        candidate = repo_root / candidate
+
+    candidate = candidate.resolve()
+    if not candidate.exists():
+        fail(f"Configured project.path does not exist: {candidate}")
+    if candidate.suffix != ".kicad_pro":
+        fail(f"Configured project.path must point to a .kicad_pro file: {candidate}")
+
+    return candidate
+
+
+def find_project_file(
+    repo_root: Path,
+    explicit_project: Optional[Path],
+    configured_project: Optional[Path],
+) -> Path:
     if explicit_project:
         project_path = explicit_project.resolve()
         if not project_path.exists():
             fail(f"Project file not found: {project_path}")
+        if project_path.suffix != ".kicad_pro":
+            fail(f"Project file must be a .kicad_pro file: {project_path}")
         return project_path
 
-    project_files = sorted(repo_root.glob("*.kicad_pro"))
+    if configured_project:
+        return configured_project
+
+    project_files = sorted(repo_root.rglob("*.kicad_pro"))
     if not project_files:
-        fail(f"No .kicad_pro file found in {repo_root}")
+        fail(f"No .kicad_pro file found under {repo_root}")
     if len(project_files) > 1:
-        names = ", ".join(str(path.name) for path in project_files)
+        names = ", ".join(str(path.relative_to(repo_root)) for path in project_files)
         fail(
-            "Multiple .kicad_pro files found. Use --project to choose one: "
+            "Multiple .kicad_pro files found under repository root. "
+            "Use --project to choose one: "
             f"{names}"
         )
     return project_files[0]
 
 
-def resolve_kicad_cli() -> str:
+def resolve_kicad_cli(dry_run: bool = False) -> str:
     env_cli = os.environ.get("KICAD_CLI")
     if env_cli:
         if Path(env_cli).exists() or shutil.which(env_cli):
@@ -141,6 +180,10 @@ def resolve_kicad_cli() -> str:
     for candidate in candidates:
         if candidate.exists():
             return str(candidate)
+
+    if dry_run:
+        print("kicad-cli not found; continuing because --dry-run was set.")
+        return "kicad-cli"
 
     fail(
         "kicad-cli not found. Install KiCad or set KICAD_CLI to the executable path."
@@ -293,7 +336,10 @@ def main() -> None:
     script_file = Path(__file__)
     repo_root = find_repo_root(script_file)
 
-    project_file = find_project_file(repo_root, args.project)
+    config = load_config(repo_root, args.config)
+    configured_project = resolve_configured_project_path(repo_root, config)
+
+    project_file = find_project_file(repo_root, args.project, configured_project)
     project_stem = project_file.stem
     pcb_file = project_file.with_suffix(".kicad_pcb")
     sch_file = project_file.with_suffix(".kicad_sch")
@@ -309,14 +355,13 @@ def main() -> None:
     else:
         print("No release value provided. Existing RELEASE text variable is unchanged.")
 
-    config = load_config(repo_root, args.config)
     configured_layer_list = get_configured_gerber_layers_list(config)
     if configured_layer_list:
         available_layers = parse_board_layers(pcb_file)
         validate_configured_layers(configured_layer_list, available_layers)
     configured_layers = ",".join(configured_layer_list) if configured_layer_list else None
 
-    kicad_cli = resolve_kicad_cli()
+    kicad_cli = resolve_kicad_cli(dry_run=args.dry_run)
     output_dir = (repo_root / args.output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
